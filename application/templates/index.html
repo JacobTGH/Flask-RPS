@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1>Please select your choice!</h1>
+    <form method="POST">
+      <label for="choice">User's choice: </label>
+      <select id="choice" name="choice">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+      </select>
+      <button type="submit">Play</button>
+    </form>
+    <p>
+      You can keep playing by selecting another option from the list and
+      pressing 'Play'!
+    </p>
+    {% if result %}
+    <h2>{{ result }}</h2>
+    {% endif %}
+    <p>Player Score: {{ player_score }}</p>
+    <p>Computer Score: {{ computer_score }}</p>
+  </body>
+</html>
