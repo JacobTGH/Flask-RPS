@@ -16,7 +16,7 @@ def play_game():
         result = game.get_winner(player_choice, computer_choice)
     return render_template(
         "index.html",
-        result=result,
-        player_score=player_score,
-        computer_score=computer_score,
+        result = result,
+        player_score = player_score,
+        computer_score = computer_score
     )
